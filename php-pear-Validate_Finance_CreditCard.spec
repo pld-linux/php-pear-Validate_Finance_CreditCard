@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_CreditCard
 
 Summary:	%{_pearname} - Validation class for Credit Cards
-Summary(pl):	%{_pearname} -
+Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla kart kredytowych
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
@@ -31,7 +31,7 @@ In PEAR status of this package is: %{_status}.
 Pakiet do sprawdzania poprawno¶ci numerów oraz typów kart kredytowych.
 
 Chocia¿ oznaczony jako alpha, pakiet zachowuje siê ca³kiem stabilnie.
-Nie ma te¿ planów do zmiany API.
+Nie ma te¿ planów zmiany API.
 
 Ta klasa ma w PEAR status: %{_status}.
 
