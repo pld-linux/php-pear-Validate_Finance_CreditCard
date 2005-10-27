@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla kart kredytowych
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1.1
+Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
