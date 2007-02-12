@@ -4,7 +4,7 @@
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}_CreditCard
 Summary:	%{_pearname} - Validation class for Credit Cards
-Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla kart kredytowych
+Summary(pl.UTF-8):   %{_pearname} - Klasa sprawdzajÄ…ca poprawnoÅ›Ä‡ dla kart kredytowych
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
 Release:	2
@@ -31,17 +31,17 @@ There is currently no plan to change the API.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet do sprawdzania poprawno¶ci numerów oraz typów kart kredytowych.
+%description -l pl.UTF-8
+Pakiet do sprawdzania poprawnoÅ›ci numerÃ³w oraz typÃ³w kart kredytowych.
 
-Chocia¿ oznaczony jako alpha, pakiet zachowuje siê ca³kiem stabilnie.
-Nie ma te¿ planów zmiany API.
+ChociaÅ¼ oznaczony jako alpha, pakiet zachowuje siÄ™ caÅ‚kiem stabilnie.
+Nie ma teÅ¼ planÃ³w zmiany API.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -50,7 +50,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
