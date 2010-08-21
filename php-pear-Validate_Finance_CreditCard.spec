@@ -7,7 +7,7 @@ Summary:	%{_pearname} - Validation class for Credit Cards
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla kart kredytowych
 Name:		php-pear-%{_pearname}
 Version:	0.5.3
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
@@ -17,8 +17,8 @@ URL:		http://pear.php.net/package/Validate_Finance_CreditCard/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(pcre)
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pcre
 Requires:	php-pear >= 4:1.0-4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,8 +44,8 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
