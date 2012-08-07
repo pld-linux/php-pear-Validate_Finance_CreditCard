@@ -1,13 +1,13 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		Validate
 %define		_subclass	Finance
 %define		_status		alpha
-%define		_pearname	%{_class}_%{_subclass}_CreditCard
+%define		_pearname	Validate_Finance_CreditCard
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Validation class for Credit Cards
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla kart kredytowych
 Name:		php-pear-%{_pearname}
 Version:	0.5.3
-Release:	3
+Release:	4
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
@@ -17,8 +17,8 @@ URL:		http://pear.php.net/package/Validate_Finance_CreditCard/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(pcre)
 Requires:	php-common >= 3:4.2.0
-Requires:	php-pcre
 Requires:	php-pear >= 4:1.0-4
 Obsoletes:	php-pear-Validate_Finance_CreditCard-tests
 BuildArch:	noarch
@@ -55,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/%{_subclass}/*
+%{php_pear_dir}/Validate/Finance/*
