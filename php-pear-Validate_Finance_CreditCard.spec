@@ -1,6 +1,5 @@
 %define		_status		alpha
 %define		_pearname	Validate_Finance_CreditCard
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Validation class for Credit Cards
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla kart kredytowych
 Name:		php-pear-%{_pearname}
